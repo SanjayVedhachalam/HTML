@@ -1,0 +1,46 @@
+<html>
+<title>Form Tags</title>
+
+<head></head>
+
+<body>
+    <h1>Login Form</h1>
+    <form method="" action="" enctype="multipart/form-data">
+        
+        <label for="username">Username: </label><br>
+        <br><input type="text" id="username" name="username" placeholder="Enter your username" size="15" maxlength="25"><br>
+        
+        <br><label for="password">Password: </label><br>
+        <br><input type="password" id="password" name="password" placeholder="Enter your password" size="15" maxlength="8"><br>
+        
+        <br><label for="email">Email : </label><br>
+        <br><input type="email" id="email" name="email" placeholder="Enter your Email ID" size="15"><br>
+        
+        <br><label for="gender">Gender : </label><br>
+        <br><input type="radio" name="gender" value="male" id="male" checked><label for="male">Male</label> 
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label><br>
+        
+        <br><label for="skill[]">Skills : </label><br>
+        <br><input type="checkbox" name="skill[]" value="java" id="java"><label for="java">Java</label> 
+        <input type="checkbox" name="skill[]" value="python" id="python"><label for="python">Python</label> 
+        <input type="checkbox" name="skill[]" value="c#" id="c#"><label for="c#">C#</label>
+        <input type="checkbox" name="skill[]" value="html" id="html"><label for="html">HTML</label><br>
+
+        <br><label for="role_applied">Role Applied for :</label><br>
+        <br><select name="role_applied">
+            <option value="software_engineer" id="software_engineer"><label for="software_engineer">Software Engineer</label></option>
+            <option value="devops_engineer" id="devops_engineer"><label for="devops_engineer">DevOps Engineer</label></option>
+            <option value="testing_engineer" id="testing_engineer"><label for="testing_engineer">Testing Engineer</label></option>
+            <option value="technical_support_engineer" id="technical_support_engineer"><label for="technical_support_engineer">Technical Support Engineer</label></option>
+        </select><br>
+        
+        <br><label for="resume">Upload a resume: </label><br>
+        <br><input type="file" name="resume" id="resume"><br>
+
+        <br><label for="comments">Comments: </label><br>
+        <br><textarea name="comments" cols="25" rows="5" id="comments" placeholder="Enter your Comments"></textarea><br>
+        <br><input type="submit" name="submit" value="Send">
+    </form>
+</body>
+
+</html>
